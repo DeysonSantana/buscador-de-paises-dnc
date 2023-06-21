@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buscador de Países</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body class="bg-dark text-white">
+
+    <nav class="navbar text-white">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./logo-dnc.png" alt="Bootstrap" width="100px">
+          </a>
+        </div>
+      </nav>
+
+      <div class="container text-center">
+        <!-- Titulo -->
+            <h1 class="text-center mb-5">Pesquisa de países<h1>
+            <!-- barra de pesquisa -->
+            <div class="input-group mb-3 ">
+                <input type="text" id="pais" class="form-control" placeholder="Digite o nome do país em inglês" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary bg-primary text-white" type="button" id="button-addon2" onclick="Procurar()">Pesquisar</button>
+            </div>
+            <!-- Card -->
+            <div class="card container text-center text-dark p-3" id="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" id="bandeira" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" id="nome">Nome</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><Strong>Capital:</Strong><p id="capital">Teste</p></li>
+                  <li class="list-group-item"><Strong>Continente:</Strong><p id="continente">Teste</p></li>
+                  <li class="list-group-item"><Strong>População:</Strong><p id="populacao">Teste</p></li>
+                </ul>
+              </div>
+      </div>
+
+   
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      <script src="index.js"></script>
+</body>
+
+</html>
